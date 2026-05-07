@@ -302,8 +302,6 @@ private fun SegmentItem(
 
             Slider(
                 value = segment.endTime,
-            Slider(
-                value = segment.endTime,
                 onValueChange = { onUpdate(segment.startTime, it, editName) },
                 valueRange = segment.startTime..1f,
                 modifier = Modifier.fillMaxWidth()
