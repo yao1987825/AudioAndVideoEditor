@@ -107,13 +107,14 @@ class AudioSegmenterViewModel : ViewModel() {
 
     fun addSegment() {
         val duration = getDuration().toFloat()
+        val currentSegments = segments.value
         val newSegment = Segment(
             id = nextSegmentId++,
-            startTime = if (segments.isEmpty()) 0f else segments.last().endTime,
-            endTime = if (segments.isEmpty()) duration / 2 else minOf(segments.last().endTime + duration / 4, duration),
+            startTime = if (currentSegments.isEmpty()) 0f else currentSegments.last().endTime,
+            endTime = if (currentSegments.isEmpty()) duration / 2 else minOf(currentSegments.last().endTime + duration / 4, duration),
             name = "segment_${nextSegmentId}"
         )
-        segments.value = segments.value + newSegment
+        segments.value = currentSegments + newSegment
     }
 
     fun removeSegment(id: Int) {
