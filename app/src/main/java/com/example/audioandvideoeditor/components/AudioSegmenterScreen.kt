@@ -294,7 +294,7 @@ private fun SegmentItem(
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "Start: ${TextsUtils.millisecondsToString((segment.startTime * duration).toLong())}",
+                text = "Start: ${segment.startTime}",
                 fontSize = MaterialTheme.typography.bodySmall
             )
             Slider(
@@ -305,7 +305,7 @@ private fun SegmentItem(
             )
 
             Text(
-                text = "End: ${TextsUtils.millisecondsToString((segment.endTime * duration).toLong())}",
+                text = "End: ${segment.endTime}",
                 fontSize = MaterialTheme.typography.bodySmall
             )
             Slider(
