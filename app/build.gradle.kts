@@ -38,7 +38,7 @@ android {
                 // 指定你想要包含的 ABI。
                 // 建议包含 arm64-v8a 和 armeabi-v7a，因为它们覆盖了绝大多数设备。
                 // 如果你的应用在模拟器上运行，或者需要支持一些较老的Intel设备，可以加上 x86 和 x86_64。"armeabi-v7a", "arm64-v8a", "x86", "x86_64"
-                include("arm64-v8a","x86_64")
+                include("arm64-v8a")
                 // 设置为 false，表示生成多个 ABI 特定的 APK，而不是一个包含所有 ABI 的通用 APK
                 isUniversalApk = false
             }
