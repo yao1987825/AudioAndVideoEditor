@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">音视频编辑器</string>
+<!--    <string name="app_version">1.0.1</string>-->
+    <string name="size_for_video_encoding_task_text">每个任务编码视频的缓存空间</string>
+    <string name="size_for_audio_encoding_task_text">每个任务编码音频的缓存空间</string>
+    <string name="size_for_max_tasks_num_text">最大的并发任务数量</string>
+    <string name="target_dir">目标文件夹</string>
+    <string name="reencoding">重编码</string>
+    <string name="obtain_audio_and_video_information">获取音视频信息</string>
+    <string name="get_ffmpeg_information">FFmpeg信息</string>
+    <string name="executing">正在执行</string>
+    <string name="waiting_for_execution">等待</string>
+    <string name="cancel_execution">取消</string>
+    <string name="execution_failed">失败</string>
+    <string name="end_of_execution">结束</string>
+    <string name="cancelled">已取消</string>
+    <string name="fail">失败</string>
+    <string name="play">播放</string>
+    <string name="ended">已结束</string>
+    <string name="user_audio_and_video_list">用户音视频列表</string>
+    <string name="user_image_list">用户图片列表</string>
+    <string name="settings">设置</string>
+    <string name="set_cache_size">设置缓存大小</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="encoder_and_decoder_information">编解码器信息</string>e
+    <string name="select_file">选择文件</string>
+    <string name="video">视频</string>
+    <string name="audio">音频</string>
+    <string name="file">文件</string>
+    <string name="function_center">功能中心</string>
+    <string name="task_center">任务中心</string>
+    <string name="user_center">用户中心</string>
+    <string name="file_name">文件标题</string>
+    <string name="set_bitrate">设置码率</string>
+    <string name="bitrate">码率</string>
+    <string name="set_frame_rate">设置帧率</string>
+    <string name="frame_rate">帧率</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="english">英语</string>
+    <string name="switch_language">切换语言</string>
+    <string name="tips_for_switching_languages">切换语言会导致应用重启和任务中止</string>
+    <string name="unknown">未知</string>
+    <string name="format">格式</string>
+    <string name="duration">时长</string>
+    <string name="video_resolution">视频分辨率</string>
+    <string name="video_bit_rate">视频码率</string>
+    <string name="sample_rate">音频采样率</string>
+    <string name="channels">声道数</string>
+    <string name="audio_bit_rate">音频码率</string>
+    <string name="path">文件路径</string>
+    <string name="request_file_permissions">编辑音视频需要获取文件读写权限</string>
+    <string name="request_notification_permissions">任务进度通知需要获取通知权限</string>
+    <string name="request_battery_permissions">取消省电限制以便后台运行任务</string>
+    <string name="ffmpeg_command_line">ffmpeg命令行</string>
+    <string name="edit_command_line">编辑命令行</string>
+    <string name="log">日志</string>
+    <string name="loading">加载</string>
+    <string name="info">信息</string>
+    <string name="type">类型</string>
+    <string name="size">大小</string>
+    <string name="copy">复制</string>
+    <string name="copy_to_clipboard">已复制到粘贴板</string>
+    <string name="video_duration_trimming">视频时长剪裁</string>
+    <string name="video_screen_cropping">视频画面剪裁</string>
+    <string name="video_scaling">调整视频比例</string>
+    <string name="video_shifting">视频变速</string>
+    <string name="extract_audio">提取音频</string>
+    <string name="video_muting">视频消音</string>
+    <string name="av_info">音视频信息</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="quick_crop">快速裁剪</string>
+    <string name="precise_crop">精准裁剪</string>
+    <string name="wait">请等待</string>
+    <string name="repack">重打包</string>
+    <string name="video_format_conversion">视频格式转换</string>
+    <string name="test">测试</string>
+    <string name="export">导出</string>
+    <string name="attributes">属性</string>
+    <string name="target_format">目标格式</string>
+    <string name="audio_format">音频格式</string>
+    <string name="video_encoding_format">视频编码格式</string>
+    <string name="date">日期</string>
+    <string name="extension">扩展名</string>
+    <string name="original_format">原格式</string>
+    <string name="original">原</string>
+    <string name="width">宽</string>
+    <string name="height">高</string>
+    <string name="original_resolution">原分辨率</string>
+    <string name="incorrect_or_invalid_input">输入不正确或无效</string>
+    <string name="original_sample_rate">原采样率</string>
+    <string name="invalid_time_selection">不合理的时间选择</string>
+    <string name="end_greater_than_start">开始时间应该大于结束时间</string>
+    <string name="select_aspect_ratio">选择尺寸比例</string>
+    <string name="ratio">比例</string>
+    <string name="original_ratio">原比例</string>
+    <string name="screen_ratio">屏幕比例</string>
+    <string name="custom_ratio">自定义比例</string>
+    <string name="select_background_color">选择背景颜色</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="app_info">应用信息</string>
+    <string name="privacy_policy_context">
+音视频编辑器（以下简称“本应用”）由我们开发并提供服务。我们深知个人信息对你的重要性，并致力于保护你的隐私。在使用本应用前，请你务必仔细阅读并理解本隐私政策。一旦你开始使用本应用，即表示你已同意本隐私政策的全部内容。\n
+
+1. 我们如何收集和使用你的信息\n
+本应用通过集成第三方广告服务，会在你使用应用时展示广告。为了优化广告展示效果和统计广告数据，我们可能会收集以下信息：\n
+
+设备信息：包括设备型号、操作系统版本、应用版本。这些信息用于确保广告能够正确地在你的设备上显示。\n
+
+广告互动数据：包括你对广告的阅读次数和点击次数。这些数据是匿名的，仅用于统计广告的展示效果和收入结算，不会与你的个人身份信息关联。\n
+
+重要提示：我们不会收集你的姓名、电话号码、电子邮件地址等个人身份信息。\n
+
+2. 我们如何使用Cookie和同类技术\n
+本应用的广告服务提供商可能会使用Cookie或其他同类技术来收集上述设备信息和广告互动数据，以提供更相关的广告内容。这些技术由广告服务提供商独立运营。\n
+
+3. 我们如何共享、公开披露你的信息\n
+我们承诺，在未经你明确同意的情况下，我们不会向任何第三方公司、组织和个人共享、转让或公开披露你的个人信息，但以下情况除外：\n
+
+在法律法规允许的范围内：为了遵守适用的法律法规、法律程序或政府强制要求。\n
+
+出于保护本应用和用户安全的需要：例如，为了调查、预防或处理欺诈、安全或技术问题。\n
+
+我们仅会与上述广告服务提供商共享匿名的广告互动数据，以实现广告展示和收入结算。\n
+
+4. 你的权利\n
+作为用户，你有权随时选择是否继续使用本应用。如果你不希望我们收集上述广告互动数据，你可以选择停止使用本应用。\n
+
+5. 我们如何保护你的信息\n
+我们采取了合理的安全措施来保护我们所收集的匿名数据，以防止数据丢失、滥用、未经授权的访问或披露。但是，请你理解，任何安全措施都无法做到百分之百的安全。\n
+
+6. 隐私政策的更新\n
+我们可能会不时更新本隐私政策。如果发生重大变更，我们会在应用内显著位置通知你，或通过其他适当方式告知。修订后的隐私政策一经发布即生效。\n
+
+7. 联系我们\n
+如果你对本隐私政策有任何疑问或建议，请通过以下方式联系我们：\n
+
+邮箱：running_in_storm@qq.com\n
+    </string>
+    <string name="app_info_context">在你的手机上使用全世界最强的开源音视频库FFmpeg。
+        \n当前版本的音视频编辑器支持执行ffmpeg命令行、视频格式转换、视频时长与画面剪裁、视频变速、提取音频和视频消音、获取音视频信息等功能。</string>
+    <string name="error_and_crash_logs">报错与崩溃日志</string>
+    <string name="clear">清空</string>
+    <string name="clear_tip">已清空</string>
+    <string name="clear_tip2">清空后无法恢复</string>
+    <string name="video_duration">视频时长</string>
+    <string name="audio_duration">音频时长</string>
+    <string name="ask_me_later">稍后询问</string>
+    <string name="deny_dont_ask_Again">禁止且不再询问</string>
+    <string name="file_read_and_write">文件读写</string>
+    <string name="notification">通知</string>
+    <string name="grant">授予</string>
+    <string name="cancel_power_saving">取消省电限制</string>
+    <string name="cancel_power_saving2">您可以前往设置/权限里面取消省电限制避免任务被杀死</string>
+    <string name="reminder_when_not_granted">未授予时提醒</string>
+    <string name="permissions">权限</string>
+    <string name="remind">提醒</string>
+    <string name="input_file">输入文件</string>
+    <string name="assisted_edit">辅助编辑</string>
+    <string name="self_edit">自主编辑</string>
+    <string name="output_file">输出文件</string>
+    <string name="parameter">参数</string>
+    <string name="parameter_template">参数模板</string>
+    <string name="open">打开</string>
+    <string name="clear_task_logs">清空任务日志</string>
+    <string name="dont_remind_again">不再提醒</string>
+    <string name="welcome">欢迎光临</string>
+    <string name="welcome_text">欢迎使用本应用，您可以在手机上使用全世界最强的开源音视频库FFmpeg</string>
+    <string name="feedback_text">如果您有什么建议或者问题反馈给开发者，可以通过以下邮箱、群聊号、表单反馈信息。</string>
+    <string name="group_name">QQ群号</string>
+    <string name="group_number">916323530</string>
+    <string name="mail_name">开发者邮箱</string>
+    <string name="mail_addr">running_in_storm@qq.com</string>
+    <string name="form1_name">腾讯表单</string>
+    <string name="form1_link">https://docs.qq.com/form/page/DU1pzdURrc2xtZ1RW#</string>
+    <string name="form2_name">谷歌表单</string>
+    <string name="form2_link">https://forms.gle/o9stobwLrKtsgHwP6</string>
+    <string name="link_name">本应用开源地址</string>
+    <string name="link">https://github.com/Ilovecat1949/AudioAndVideoEditor</string>
+    <string name="releases_link">https://github.com/Ilovecat1949/AudioAndVideoEditor/releases</string>
+    <string name="task_tip">您已开启一个新任务</string>
+    <string name="crash_message_title">抱歉，出错了</string>
+    <string name="feedback_text2">很抱歉，应用出现了问题，请通过下面邮箱、群聊号、表单反馈报错信息帮助我们改进应用</string>
+    <string name="feedback_text3">很抱歉，出错了，请联系开发者</string>
+    <string name="feedback_text4">欢迎使用本应用！您可以通过下面项目地址、邮箱、群聊号、表单与我们联系</string>
+    <string name="contact_developer">联系开发者</string>
+    <string name="video_encoding">视频重编码</string>
+    <string name="audio_encoding">音频重编码</string>
+    <string name="reset_resolution">重置分辨率</string>
+    <string name="reset_video_bitrate">重置视频码率</string>
+    <string name="reset_audio_bitrate">重置音频码率</string>
+    <string name="reset_frame_rate">重置帧率</string>
+    <string name="reset_sampling_rate">重置采样率</string>
+    <string name="duration_cutting">时长剪裁</string>
+    <string name="screen_clipping">画面剪裁</string>
+    <string name="reset_video_scale">重置画面比例</string>
+    <string name="change_video_speed">视频变速</string>
+    <string name="distance_from_the_top">与顶部的距离</string>
+    <string name="distance_from_the_left_side">与左边的距离</string>
+    <string name="check_for_updates">检查更新</string>
+    <string name="updates_tip">发现最新版</string>
+    <string name="updates_tip2">请点击下列网址更新</string>
+    <string name="updates_tip3">已经是最新版</string>
+    <string name="lanzout_link">https://wwbv.lanzout.com/b00wm6q5oh</string>
+    <string name="video_compress">视频压缩</string>
+    <string name="select_tip">请先选择一个选项！</string>
+    <string name="sort">排序</string>
+    <string name="criteria">依据</string>
+    <string name="modified_time">更新时间</string>
+    <string name="order">顺序</string>
+    <string name="asc">正序</string>
+    <string name="desc">倒序</string>
+    <string name="ad">广告</string>
+    <string name="owner">Ilovecat1949</string>
+    <string name="repo">AudioAndVideoEditor</string>
+    <string name="read_and_write_permissions">你好，应用需要读写权限处理音视频</string>
+    <string name="reauthorization">再次授权</string>
+    <string name="go_to_settings">前往设置</string>
+    <string name="apply_for_notification_permission">你好，应用通知权限显示进度和保活后台任务</string>
+    <string name="recording_permission">你好，录制声音需要录音权限</string>
+    <string name="start_recording_screen">开始录屏</string>
+    <string name="request_write_permission">应用需要请求写文件权限</string>
+    <string name="request_read_permission">应用需要请求读文件权限</string>
+    <string name="request_notification_permission">应用需要请求通知件权限</string>
+    <string name="request_permission">应用需要请求权限</string>
+    <string name="minimalist_screen_recording">极简录屏</string>
+    <string name="stop">停止</string>
+    <string name="start">开始</string>
+    <string name="recording">正在录制…</string>
+    <string name="rejected">被拒绝</string>
+    <string name="recorded_videos">已录制的视频</string>
+    <string name="empty">空</string>
+    <string name="record">录屏</string>
+</resources>
