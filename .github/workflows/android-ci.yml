@@ -47,7 +47,7 @@ jobs:
         with:
           name: debug-apks
           path: |
-            app/build/outputs/apk/*/debug/*.apk
+            app/build/outputs/apk/debug/*.apk
           retention-days: 14
 
       - name: Upload build scan
