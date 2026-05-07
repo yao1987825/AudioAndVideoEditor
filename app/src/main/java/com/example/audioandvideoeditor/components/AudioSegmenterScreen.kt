@@ -294,7 +294,7 @@ private fun SegmentItem(
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "开始: " + TextsUtils.millisecondsToString((segment.startTime * duration).toLong()),
+                text = "开始: ${TextsUtils.millisecondsToString((segment.startTime * duration).toLong())}",
                 fontSize = MaterialTheme.typography.bodySmall
             )
             Slider(
@@ -305,7 +305,7 @@ private fun SegmentItem(
             )
 
             Text(
-                text = "结束: " + TextsUtils.millisecondsToString((segment.endTime * duration).toLong()),
+                text = "结束: ${TextsUtils.millisecondsToString((segment.endTime * duration).toLong())}",
                 fontSize = MaterialTheme.typography.bodySmall
             )
             Slider(
