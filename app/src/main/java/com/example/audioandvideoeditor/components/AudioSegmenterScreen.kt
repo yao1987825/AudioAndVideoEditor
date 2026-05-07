@@ -59,6 +59,7 @@ import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+import kotlinx.coroutines.delay
 
 private val TAG = "AudioSegmenterScreen"
 
@@ -89,6 +90,9 @@ fun AudioSegmenter(
         viewModel.setAudioUri(sampleAudioUri)
     }
 
+    var currentPosition by remember { mutableStateOf(0L) }
+    var totalDuration by remember { mutableStateOf(0L) }
+
     DisposableEffect(lifecycleOwner) {
         val observer = LifecycleEventObserver { _, event ->
             if (event == Lifecycle.Event.ON_START || event == Lifecycle.Event.ON_RESUME) {
@@ -109,13 +113,20 @@ fun AudioSegmenter(
     }
 
     LaunchedEffect(viewModel.getExoPlayer()) {
-        viewModel.getExoPlayer()?.addListener(object : androidx.media3.common.Player.Listener {
-            override fun onPlaybackStateChanged(playbackState: Int) {
-                if (playbackState == androidx.media3.common.Player.STATE_READY) {
-                    audioReady = true
+        viewModel.getExoPlayer()?.let { player ->
+            player.addListener(object : androidx.media3.common.Player.Listener {
+                override fun onPlaybackStateChanged(playbackState: Int) {
+                    if (playbackState == androidx.media3.common.Player.STATE_READY) {
+                        audioReady = true
+                        totalDuration = player.duration
+                    }
                 }
+            })
+            while (true) {
+                currentPosition = player.currentPosition
+                delay(100)
             }
-        })
+        }
     }
 
     Column(
@@ -129,7 +140,7 @@ fun AudioSegmenter(
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(150.dp),
+                    .height(200.dp),
             ) {
                 if (viewModel.currentAudioUri != null && audioReady) {
                     AndroidView(
@@ -142,6 +153,22 @@ fun AudioSegmenter(
                             playerView!!
                         }
                     )
+                    Spacer(modifier = Modifier.height(8.dp))
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween
+                    ) {
+                        Text(
+                            text = TextsUtils.millisecondsToString(currentPosition),
+                            fontWeight = FontWeight.Bold,
+                            fontSize = MaterialTheme.typography.bodyMedium.fontSize
+                        )
+                        Text(
+                            text = TextsUtils.millisecondsToString(totalDuration),
+                            fontWeight = FontWeight.Bold,
+                            fontSize = MaterialTheme.typography.bodyMedium.fontSize
+                        )
+                    }
                 }
             }
 
