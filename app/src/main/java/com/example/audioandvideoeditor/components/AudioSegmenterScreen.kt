@@ -293,10 +293,6 @@ private fun SegmentItem(
 
             Spacer(modifier = Modifier.height(8.dp))
 
-            Text(
-                text = "Start: ${segment.startTime}",
-                fontSize = MaterialTheme.typography.bodySmall
-            )
             Slider(
                 value = segment.startTime,
                 onValueChange = { onUpdate(it, segment.endTime, editName) },
@@ -304,10 +300,8 @@ private fun SegmentItem(
                 modifier = Modifier.fillMaxWidth()
             )
 
-            Text(
-                text = "End: ${segment.endTime}",
-                fontSize = MaterialTheme.typography.bodySmall
-            )
+            Slider(
+                value = segment.endTime,
             Slider(
                 value = segment.endTime,
                 onValueChange = { onUpdate(segment.startTime, it, editName) },
